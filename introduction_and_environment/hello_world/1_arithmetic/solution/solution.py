@@ -1,8 +1,8 @@
 from provided_code import x, y
 SUM=x+y
-DIFF=y-y
+DIFF=x-y
 MULT=x*y
 DIV=x/y
 POWER=x**y
-QUOTIENT=w//y
+QUOTIENT=x//y
 REMAINDER= x%y
