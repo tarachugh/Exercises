@@ -1,3 +1,3 @@
 # Code your solution here
-x=3
-y=2
+X=3
+Y=2
