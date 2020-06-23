@@ -6,4 +6,3 @@ DIV=x/y
 POWER=x**y
 QUOTIENT=w//y
 REMAINDER= x%y
-
