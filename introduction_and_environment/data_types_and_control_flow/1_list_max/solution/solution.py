@@ -1,0 +1,12 @@
+L = [152, 463, 1112, 1337, -10]
+LIST_MAX=0
+if L[0]>=LIST_MAX:
+    LIST_MAX=L[0]
+if L[1]>=LIST_MAX:
+    LIST_MAX=L[1]
+if L[2]>=LIST_MAX:
+    LIST_MAX=L[2]
+if L[3]>=LIST_MAX:
+    LIST_MAX=L[3]
+if L[4]>=LIST_MAX:
+    LIST_MAX=L[4]
