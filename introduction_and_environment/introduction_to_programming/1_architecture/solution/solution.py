@@ -1,1 +1,2 @@
-# Code your solution below
+Answer = "a.John Von Neuman"
+print(Answer) 

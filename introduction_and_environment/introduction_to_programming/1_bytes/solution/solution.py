@@ -1,1 +1,2 @@
-# Code your solution below
+Answer = "Gigabyte"
+print(Answer) 

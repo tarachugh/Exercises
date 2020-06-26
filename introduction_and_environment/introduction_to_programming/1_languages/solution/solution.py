@@ -1,1 +1,4 @@
-# Code your solution below
+def Answer():
+    return "Interpreter"
+
+print(Answer()) 
