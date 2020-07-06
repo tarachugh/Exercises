@@ -4,3 +4,5 @@ results = dict(sorted(my_dict.items(), key=operator.itemgetter(1)))
 print('Dictionary in ascending order by value : ',results)
 results = dict(sorted(my_dict.items(), key=operator.itemgetter(1),reverse=True))
 print('Dictionary in descending order by value : ',results)
+
+# sorted(what to sort, key=None, reverse)
