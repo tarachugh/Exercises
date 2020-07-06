@@ -2,7 +2,7 @@
 Dict = {}
 
 # Adding elements one at a time
-Dict[0] = 'Bob'
-Dict[1] = 1.0
-Dict['value_set'] = 1,2,3
+Dict["string"] = 'string'
+Dict[1] = 21
+Dict[2] = [2.1,2.2,2.3]
 print(Dict) 

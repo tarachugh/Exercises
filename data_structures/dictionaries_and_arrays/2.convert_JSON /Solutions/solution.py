@@ -10,4 +10,5 @@ my_dict = {"students":[{"firstName": "Nikki", "lastName": "Roysden"},
 
 result = convert(my_dict)
 print(result)
+print(type(result))
 
