@@ -13,16 +13,40 @@ class Node:
 # x = Node(1, Node(2, x))
 # has_cycle(Node(1, Node(2, None))) -> False
 # has_cycle(x) -> True
-def has_cycle(ll):
-    if ll == None or ll.rest == None:
-        return False
-    tortoise = ll
-    hare = ll.rest
-    while hare != None and hare.rest != None:
-        if id(tortoise) == id(hare):
-            return True
-        else:
-            tortoise = tortoise.next
-            hare = hare.next.next
-    return False
 
+# def has_cycle(ll):
+#     return _has_cycle(ll, [])
+
+# def _has_cycle(ll, already_seen):
+#     current=ll
+#     if ll==None:
+#         return False
+#     elif current in already_seen:
+#         return True
+#     else:
+#         already_seen.append(current)
+#         _has_cycle(ll.rest, already_seen)
+
+def has_cycle(ll):
+    ret=False
+    if ll==None:
+        return False
+    skips_2=ll.first
+    skips_1=ll.rest
+    while skips_2!=None and skips_1!=None:
+        if(skips_2==skips_1):
+            ret= True
+        else:
+            skips_2=skips_2.rest.rest
+            skips_1=skips_1.rest
+    return ret
+
+
+
+
+
+x=Node(3, Node(4, x))
+y=has_cycle(Node(1, Node(2, None)))
+z=has_cycle(x)
+print(str(y))
+print(str(z))
