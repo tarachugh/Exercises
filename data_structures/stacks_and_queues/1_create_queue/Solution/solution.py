@@ -1,13 +1,16 @@
-# Code your solution here
-def queue():
-    import queue
-    queue_a = queue.Queue(maxsize=5)   # Queue is created as an object 'queue_a'
-    queue_a.put(9)   
-    queue_a.put(6)   
-    queue_a.put(7)   # Data is inserted in 'queue_a' at the end using put()  
+import queue
+def create_queue():
+    queue_a=queue.Queue(maxsize=5)
+    queue_a.put(1)
+    queue_a.put(2)
+    queue_a.put(3)
     queue_a.put(4)
-    queue_a.put(1)   
+    queue_a.put(5)
     return queue_a
-data=queue()
-result=list(data.queue)
-print(result)
+
+data=create_queue()
+data=list(data.queue)
+for i in data:
+    print(i)
+
+# Queue class is a class inside the module queue

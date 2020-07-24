@@ -2,6 +2,6 @@
 def pop(stack_fruits):
     stack_fruits.pop()
     return stack_fruits
-stack_fruits=['apple','banana','orange','watermelon','grapes']
+stack_fruits=["1", "2", "3", "4", "5", "6"]
 result=pop(stack_fruits)
 print(result)

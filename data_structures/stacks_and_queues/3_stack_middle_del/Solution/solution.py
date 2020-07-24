@@ -1,7 +1,3 @@
-# code to delete middle of a stack 
-# without using additional data structure. 
-
-# Deletes middle of stack of size n. Curr is current item number 
 class Stack: 
 	def __init__(self): 
 		self.items = [] 
@@ -21,41 +17,29 @@ class Stack:
 	def size(self): 
 		return len(self.items) 
 		
-def deletemid(st, n, curr) : 
+def deletemid(stack, size, index_now) : 
 
-	# If stack is empty or all items 
-	# are traversed 
-	if (st.isEmpty() or curr == n) : 
+	if (stack.isEmpty() or index_now == size) : 
 		return
 	
-	# Remove current item 
-	x = st.peek() 
-	st.pop() 
+	taken_off = stack.peek() 
+	stack.pop() 
 	
-	# Remove other items 
-	deletemid(st, n, curr+1) 
+	deletemid(stack, size, index_now+1) 
 	
-	# Put all items back except middle 
-	if (curr != int(n/2)) : 
-		st.push(x) 
+	if index_now != (size//2) : 
+		stack.push(taken_off) 
 
-if __name__ == '__main__': 
-    st = Stack() 
 
-# push elements into the stack 
-    st.push('1') 
-    st.push('2') 
-    st.push('3') 
-    st.push('4') 
-    st.push('5') 
-    st.push('6') 
-    st.push('7') 
+a=Stack()
+a.push('1') 
+a.push('2') 
+a.push('3') 
+a.push('4') 
+a.push('5') 
+a.push('6') 
+a.push('7') 
 
-    deletemid(st, st.size(), 0) 
-
-# Printing stack after deletion 
-# of middle. 
-    while (st.isEmpty() == False) : 
-	    p = st.peek() 
-	    st.pop() 
-	    print (p, end=" ") 
+deletemid(a, a.size(), 0)
+result=a.items
+print(result)
